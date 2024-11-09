@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>de.no - Domain For Sale</title>
+    <title>de.no - Domain For Sale | Domene Til Salgs</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -22,6 +22,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             max-width: 600px;
+            width: 90%;
             margin: 20px;
         }
         h1 {
@@ -35,26 +36,46 @@
             color: #27ae60;
             margin: 1.5rem 0;
         }
-        .contact {
+        .form-container {
             margin-top: 2rem;
         }
-        a {
-            color: #3498db;
-            text-decoration: none;
+        .form-container iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            margin-top: 1rem;
         }
-        a:hover {
-            text-decoration: underline;
+        .secondary-text {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 0.5em;
+        }
+        .price-note {
+            font-size: 1rem;
+            color: #666;
+            margin: 0.5rem 0 1.5rem 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>de.no</h1>
-        <p>Dette domenet er til salgs</p>
+        
+        <p>Dette domenet er til salgs<br>
+        <span class="secondary-text">This domain is for sale</span></p>
+        
         <div class="price">NOK 110 000</div>
-        <div class="contact">
-            <p>For henvendelser, kontakt:</p>
-            <a href="mailto:your@email.com">your@email.com</a>
+        
+        <div class="price-note">
+            Pris kan diskuteres<br>
+            <span class="secondary-text">Price is negotiable</span>
+        </div>
+
+        <div class="form-container">
+            <p>Interessert? Fyll ut skjemaet under:<br>
+            <span class="secondary-text">Interested? Fill out the form below:</span></p>
+            <!-- Replace the src URL below with your actual Google Form embed URL -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfXsPw7gA7vV61IiDEK4TEh9b2pyvKZegZow61BO5z4OSXA9w/viewform?usp=sharing"></iframe>
         </div>
     </div>
 </body>
